@@ -14,6 +14,15 @@ body{
 }
 
 /* Link Styles */
+
+.contato li a{
+    
+    text-decoration: none;
+    color: #042338;
+   
+}
+
+
 a{
     text-decoration: none;
     color: #0499ff;
@@ -44,7 +53,7 @@ ul.skills{
 
 .skills li:nth-child(odd) {
     background: #0399ff;
-  }
+}
 
 .main-nav{
     width:  100%;
@@ -74,21 +83,20 @@ ul.skills{
 
 .nav a:hover {
     color: white
-  }
+}
 
 .nav li {
     padding: 5px 10px 10px 10px;
 }
-
-.main {
-    padding-top: 75px;
-  }
 
 /* Section Styles */
 .nav a:hover {
     color: white
 }
   
+.flex {
+   padding-top: 50px;
+}
 
 footer {
     width: 100%;
@@ -133,6 +141,39 @@ a.github {
     background-image: url(images/github.svg);
 }
 
+.contact-info li.mail a {
+    background-image:url(images/mail.png);
+}
+
+.contact-info li.phone a {
+    background-image:url(images/whatsapp.png);
+}
+.contact-info{
+    list-style:none;
+    padding:0;
+    font-size: 0.9em;
+}
+
+.contact-info a{
+    display:flex;
+    min-height:20px;
+    background-repeat:no-repeat;
+    background-size:20px 20px;
+    padding:0 0 15px 30px;
+    margin-left: 50px;
+   
+}
+
+.contato{
+    
+}
+
+.contato h3 {
+    padding-top: 75px;
+    display: flex;
+}
+
+
 a.social:hover {
     opacity: 1;
 }
@@ -140,9 +181,55 @@ a.social:hover {
     clear: both;
 }
 
+.curr{
+    padding-top: 75px;
+    text-align: left;
+
+}
+
+.curr p{
+    margin-left: 40px;
+}
+.pessoal ul{
+    list-style-type: none;
+    text-align: left;
+}
+
+.objetivo{
+    text-align: left;
+}
+
+.hp ul{
+    list-style-type: none;
+}
+.fa ul{
+    list-style-type: none;
+}
+.idioma ul{
+    list-style-type: none;
+}
+
+.ce ul{
+    list-style-type: none;
+}
+
+h3{
+    margin-left: 38px;
+}
+
+
+
 /* Styles for larger screens */
 
 @media screen and (min-width: 720px) {
+    .flex {
+        display: flex;
+        max-width: 1200px;
+        justify-content: space-around;
+        margin: 0 auto;
+        padding-top: 50px;
+    }
+  
 
     .nav .name {
         display: block;
@@ -150,10 +237,6 @@ a.social:hover {
         color: white;
     }  
 
-    header {
-        min-height: 450px;
-      }
- 
     .nav {
         max-width: 1200px;
     }
@@ -166,16 +249,15 @@ a.social:hover {
 
     main {
         padding-top: 50px;
-      }
+    }
     
-      main p {
-        line-height: 1.6em;
-      }
+    main p {
+       line-height: 1.6em;
+    }
 
     footer{
         font-size: 1.3em;
         /*max-width: 1200px;*/
         margin: 40px auto;
-    }
-     
+    } 
 }
