@@ -22,7 +22,6 @@ body{
    
 }
 
-
 a{
     text-decoration: none;
     color: #0499ff;
@@ -141,17 +140,11 @@ a.github {
     background-image: url(images/github.svg);
 }
 
-.contact-info li.mail a {
-    background-image:url(images/mail.png);
-}
 
-.contact-info li.phone a {
-    background-image:url(images/whatsapp.png);
-}
 .contact-info{
     list-style:none;
     padding:0;
-    font-size: 0.9em;
+
 }
 
 .contact-info a{
@@ -161,15 +154,28 @@ a.github {
     background-size:20px 20px;
     padding:0 0 15px 30px;
     margin-left: 50px;
+    height:  25px;
    
 }
 
+.contato{
+    padding-left: 130px;
+}
 .contato h3 {
     padding-top: 75px;
     display: flex;
     margin-top: 0px;
 }
 
+.contact-info li a i{
+
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+.contact-info i{
+   padding-top: 2px; 
+}
 
 a.social:hover {
     opacity: 1;
@@ -199,7 +205,7 @@ a.social:hover {
 .hp ul{
     list-style-type: none;
 }
-.fa ul{
+.formacao ul{
     list-style-type: none;
 }
 .idioma ul{
@@ -218,7 +224,7 @@ h3{
 
 /* Styles for larger screens */
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 500px) {
     .flex {
         display: flex;
         max-width: 1200px;
@@ -227,6 +233,10 @@ h3{
         padding-top: 50px;
     }
   
+
+    .contato h3{
+        text-align: center;
+    }
 
     .nav .name {
         display: block;
