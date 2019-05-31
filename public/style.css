@@ -158,9 +158,6 @@ a.github {
    
 }
 
-.contato{
-    padding-left: 130px;
-}
 .contato h3 {
     padding-top: 75px;
     display: flex;
@@ -224,7 +221,7 @@ h3{
 
 /* Styles for larger screens */
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 720px) {
     .flex {
         display: flex;
         max-width: 1200px;
